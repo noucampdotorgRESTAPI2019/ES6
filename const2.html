@@ -1,0 +1,20 @@
+<html>  
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.js"></script>
+    <script type="text/babel">   
+        const club = {"name":"FC Barcelona", sponsor:"Rakuten"};
+        // const club = {"name":"FC Barcelona", sponsor:"Nike"}; // ERROR
+        club.sponsor="Nike";
+        console.log(club);
+        document.getElementById('code').innerHTML=`{name: "FC Barcelona", sponsor: "Nike"} ["Audi", "BMW", "VW"]`;
+
+        const cars = ["Audi", "BMW", "Skoda"];
+        cars[2]="VW";
+        console.log(cars);
+
+    </script>
+</head>
+<body>
+  <code id='code'></code>
+</body>
+</html>
